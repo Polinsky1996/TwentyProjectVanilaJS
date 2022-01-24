@@ -1,0 +1,107 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+ --main-color: #ffffff;
+ --select-color: #6feaf6;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 50px;
+    position: relative;
+    background-color: #242333;
+
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instruction {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.item {
+    display: flex;
+}
+
+.item-label {
+    margin-right: 0.5rem;
+}
+
+
+.select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 0.2rem 1rem;
+
+    border: none; 
+    border-radius: 10px;
+}
+
+.screen {
+    width: 200px;
+    height: 80px;
+    margin-bottom: 30px;
+    transform-origin: 50% 50%;
+    transform:perspective(500px)rotate(180deg)rotateX(200deg);
+    background-color: var(--main-color);
+    box-shadow: 0px 5px 50px var(--main-color);
+}
+
+.room {
+    margin-bottom: 3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.point {
+    display: inline;
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    background-color: #444451;
+    border-radius: 10px 10px 0 0;
+}
+
+.point-occupied {
+    background-color: var(--main-color);
+}
+
+.point-selected {
+    background-color: var(--select-color);
+}
+
+
+.point:nth-child(2),:nth-child(6) {
+    margin-right: 20px;
+}
+
+.out span {
+    color: var(--select-color)
+}
