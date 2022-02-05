@@ -103,8 +103,6 @@ upSelect.addEventListener('change', () => {
 
 upInput.addEventListener('change', calculateResult);
 
-buttonSwapSelect.addEventListener('click', () => {
-    buttonSwapSelectCurrency();
-});
+buttonSwapSelect.addEventListener('click', buttonSwapSelectCurrency);
 
 checkFirstStart();
