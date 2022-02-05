@@ -1,0 +1,126 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #000000;
+}
+
+body {
+    min-height: 100vh;
+    padding: 3rem;
+
+    background-color: #f4f4f4;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.form__title {
+    text-align: center;
+}
+
+.form__wrapper {
+    display: flex;
+    height: 400px;
+    padding: 2em;
+}
+
+.form__navigation {
+    display: flex;
+    padding: 0.5em 1em 0 0;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border-right: 1px solid var(--main-color);
+}
+
+.form__button {
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 2em;
+
+    background-color: #fff;
+    color: inherit;
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.form__output {
+    flex: 0 1 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0 0 1.2em;
+}
+
+.form__item-out {
+    padding: 0.2em 0.5em;
+}
+
+.out--total {
+    display: block;
+    background-color: #ffffff;
+}
+
+.form__subtitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    font-size: 1.5rem;
+
+    border-bottom: 1px solid var(--main-color);
+}
+
+.form__out-block {
+    margin-top: 1em 0;
+    padding-right: 0.5em;
+    overflow: auto;
+}
+
+.form__item-out {
+    margin: 0.5em 0;
+}
+
+.form__column-person {
+    font-weight: 700;
+}
+
+.form__column-wealth {
+    font-weight: 400;
+}
+
+.form__item-out {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.form__name-person {
+    font-weight: 700;
+}
+
+.form__wealth-person {
+    font-weight: 400;
+}
+
+.out--total .form__name-person  {
+    font-weight: 400;
+}
+
+.out--total .form__wealth-person {
+    font-weight: 700;
+}
+
+.out--hidden {
+    display: none;
+}
