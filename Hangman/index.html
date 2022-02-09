@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman</h1>
+        <div class="subtitle">Find the hidden word - Enter a letter</div>
+        
+        <div class="modal-lose modal">
+            <div class="modal-frame">
+                <div class="modal-text">Unfortunately you lost. 😕</div>
+                <button class="new-game">Play again</button>    
+            </div>
+        </div>
+        <div class="modal-win modal">
+            <div class="modal-frame">
+                <div class="modal-text">Congratulations! You won! 😃</div>
+                <button class="new-game">Play again</button>    
+            </div>
+        </div>
+        <svg width="200px" height="250px" class="hangman__container">
+            <line x1="160" y1="20" x2="160" y2="50" />
+            <line x1="60" y1="20" x2="160" y2="20" />
+            <line x1="60" y1="20px" x2="60" y2="230" />
+            <line x1="10" y1="230px" x2="190" y2="230" />
+            <!--head-->
+            <circle cx="160" cy="70" r="20" class="hangman-part" />
+            <!--body-->
+            <line x1="160" y1="90px" x2="160" y2="150" class="hangman-part" />
+            <!--left-arm-->
+            <line x1="130" y1="120px" x2="160" y2="90" class="hangman-part" />
+            <!--right-arm-->
+            <line x1="160" y1="90px" x2="190" y2="120" class="hangman-part" />
+            <!--left-leg-->
+            <line x1="130" y1="180" x2="160" y2="150" class="hangman-part" />
+            <!--right-leg-->
+            <line x1="160" y1="150" x2="190" y2="180" class="hangman-part" />
+        </svg>
+        <div class="hangman__word">
+        </div>
+        <div id="wrong" class="hangman__taken-letters">sdfsdf</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
