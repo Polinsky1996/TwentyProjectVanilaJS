@@ -73,6 +73,7 @@ function displaySelectedRecipe(meals) {
 
 containerResult.addEventListener('click', event => {
     const card = event.target;
+    console.log(event.path);
 
     if (card && card.classList.contains('result__title')) {
         getSelectedRecipe(`https://www.themealdb.com/api/json/v1/1/search.php?s=${card.innerText}`);

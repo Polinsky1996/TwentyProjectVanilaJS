@@ -1,0 +1,19 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --success-color: #58b175;
+    --error-color: #d63333;
+}
+
+body {
+    min-height: 100vh;
+    padding: 3rem;
+
+    background-color: #f9fafb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}

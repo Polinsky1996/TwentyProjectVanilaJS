@@ -1,4 +1,3 @@
-/*
 const blockWord = document.querySelector('.hangman__word');
 const takenLetters = document.querySelector('.hangman__taken-letters');
 const btnNewGame = document.querySelectorAll('.new-game');
@@ -103,5 +102,3 @@ function showElementHangman() {
 }
 
 newGame();
-
-*/
